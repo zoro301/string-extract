@@ -96,6 +96,7 @@ public class JavaMessageFile implements IMessageFile {
 			for (String varValue : newStrings.keySet()) {
 				String varName = newStrings.get(varValue);
 				existStrings.put(varValue, varName);
+				//准备写入常量文件，转义处理
 				varValue = MessageUtil.reverseConv(varValue);
 				addLines.add("    public static final String " + varName + " = \"" + varValue + "\";\r\n");
 			}

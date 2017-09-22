@@ -2,6 +2,7 @@ package com.renqiang.str.extract;
 
 public class MessageUtil {
 
+	//翻译字符串中转义处理
 	public static String translateStringConstant(String str){
 		StringBuffer buf = new StringBuffer();
 		char[] data = str.toCharArray();

@@ -82,7 +82,7 @@ public class StartMainStringExtract {
                 }
             }else{
                 //过滤不要解析的文件
-                if(!file.getAbsolutePath().endsWith(".svn") && !file.getAbsolutePath().endsWith(".git")){
+                if(!file.getAbsolutePath().endsWith(".svn") && !file.getAbsolutePath().endsWith(".git") && !file.getAbsolutePath().endsWith(".xml") && !file.getAbsolutePath().endsWith(".properties")){
                     File[] files = file.listFiles();
                     for(File f: files){
                         getMessage(f,jmf, jmfName);

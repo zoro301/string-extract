@@ -42,6 +42,7 @@ public class MessageVerifyUtil {
             }
         }
         if (changed) {
+            //替换字符串，重写文件
         	JavaTokenizer.save(new File(file), encoding, tokens);
         }
     }
